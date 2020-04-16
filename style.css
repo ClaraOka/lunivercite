@@ -1,0 +1,665 @@
+body {
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+header {
+  width: 100%;
+  padding: 20px 30px 20px 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  width: 300px;
+  height: auto;
+}
+
+header nav {
+  float: right;
+}
+
+header nav a {
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(144, 200, 241);
+  margin-left: 25px;
+}
+
+.selected {
+  font-weight: 700;
+}
+
+header nav a:hover {
+  color: rgb(94, 194, 154);
+}
+
+.intro {
+  width: 100%;
+  background-color: rgb(94, 194, 154);
+}
+
+.intro p {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  padding: 30px 30px 30px 30px;
+}
+
+.bienvenue {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+}
+
+.imageBienvenue {
+  width: 50%;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.imageBienvenue:hover{
+  transform: scale(1.1);
+}
+
+.texteBienvenue {
+  width: 50%;
+  background-color: #fff;
+  color: rgb(144, 200, 241);
+  font-size: 16px;
+  padding: 10px 15px 20px 15px;
+  font-weight: 700;
+}
+
+.texteBienvenue h2 {
+  font-size: 20px;
+  line-height: 3;
+}
+
+.citation {
+  width: 100%;
+  background-color: rgb(229, 220, 0);
+}
+
+.citation div p {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  padding: 30px 30px 30px 30px;
+}
+
+.totemsRoles {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+    margin-top : 20px;
+
+}
+
+.totemsRoles div {
+  width: 33.33%;
+  text-align: center;
+}
+
+.totemsRoles div img {
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  transition : transform 0.3s ease;
+}
+.totemsRoles div img:hover{
+  transform: scale(1.3);
+}
+
+.roles {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.roles div {
+  width: 33.33%;
+  color: rgb(255, 72, 0);
+  padding: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.roles div h3 {
+  font-size: 20px;
+}
+
+.presentation {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 700;
+}
+
+.presentation h3 {
+  font-size: 20px;
+}
+
+.presentationDemarche {
+  width: 50%;
+  background-color: rgb(144, 200, 241);
+  color: #fff;
+  padding: 20px;
+}
+
+.presentationAction {
+  width: 50%;
+  color: rgb(144, 200, 241);
+  padding: 20px 40px 20px 20px;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background-color: rgb(229, 220, 0);
+  padding: 20px;
+}
+
+footer div p {
+  font-size: 12px;
+  text-align: right;
+}
+
+.mailto {
+  font-size: 18px;
+  font-weight: 700;
+    padding-bottom: 3px;
+
+  transition: border-bottom 0.1s ease;
+}
+
+.mailto:hover{
+  border-bottom: 2px solid #fff;
+
+}
+
+footer div a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+.introCoop{
+  background-color: rgb(144, 200, 241);
+  margin-bottom: 20px;
+}
+
+.introCoop div{
+    max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+}
+
+.introCoop p{
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.coop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.perso {
+  margin: 15px;
+  position: relative;
+
+}
+
+.perso img {
+  max-height: 200px;
+
+}
+
+.overlay {
+  opacity: 0;
+  position: absolute;
+  background-color: rgba(255, 72, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding: 15px;
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay h3 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.perso:hover .overlay {
+  opacity: 1;
+}
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.modal-close {
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  color: rgb(144, 200, 241);
+  font-weight: 900;
+  padding: 20px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.modal-content {
+position: absolute;
+  top: 100px;
+  left: 50%;
+  max-width: 900px;
+  width: 90%;
+  transform: translateX(-50%);
+  background-color: rgba(144, 200, 241, 0.9);
+  padding: 50px 50px 40px 50px;
+}
+
+.modal-content {
+  font-size: 18px;
+  font-family: Open Sans;
+  text-align: left;
+  color: #fff;
+}
+
+.modal {
+  display: none;
+}
+
+.introProjet div{
+    max-width: 880px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+}
+
+.introProjet p{
+  text-align: center;
+  color: rgb(144, 200, 241);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.projet {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  min-height: 350px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.projet h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.imageProjet {
+  align-items: center;
+  width: 33.33%;
+  background-color: #fff;
+  text-align: center;
+}
+
+
+
+.texteProjet {
+  width: 66.66%;
+  padding: 10px;
+  min-height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.texte1Projet {
+  width: 50%;
+  padding: 10px;
+}
+
+.texte2Projet {
+  width: 50%;
+  padding: 15px;
+}
+
+span {
+  font-weight: 700;
+}
+
+.reference p {
+  max-width: 550px;
+  color: ;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0 70px 30px 70px;
+  transition: transform 0.5s ease;
+
+}
+
+.reference p:hover{
+  transform : scale(1.15);
+}
+
+.reference span {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.gauche {
+  float: left;
+}
+.droite {
+  float: right;
+  text-align: right;
+}
+.contact a {
+  text-decoration: none;
+  color: rgb(144, 200, 241);
+  border-bottom: 2px solid rgb(144, 200, 241);
+}
+
+.contact a:hover {
+  color: rgb(94, 194, 154);
+  border-bottom: 2px solid rgb(94, 194, 154);
+}
+
+.contact {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(144, 200, 241);
+  font-size: 20px;
+  margin-top: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contactImage {
+  max-width: 100%;
+}
+
+@media (max-width: 750px) {
+  .overlay {
+    display: none;
+  }
+
+  body {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  header {
+    padding: 10px 15px 10px 10px;
+    display: block;
+    text-align: center;
+  }
+
+  header h1 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  header nav {
+    float: none;
+  }
+
+  .intro {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .intro p {
+    font-size: 18px;
+  }
+
+  .bienvenue {
+    width: 100%;
+    display: block;
+  }
+
+  .imageBienvenue {
+    width: 100%;
+  }
+
+  .texteBienvenue {
+    width: 100%;
+    padding: 20px 20px 30px 30px;
+    text-align: center;
+  }
+
+  .texteBienvenue p {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cooperative {
+    display: block;
+  }
+
+  /*.perso{
+  width: 100%;
+  display: block;
+}*/
+
+  /*.photo{
+  width: 100%;
+}*/
+
+  /*.bio{
+  width: 100%;
+  padding: 20px 50px 20px 20px;
+}
+
+  #barbara, #martine, #sebastien, #thomas{
+    display: flex;
+    flex-direction: column-reverse;
+  }  */
+}
+
+@media (max-width: 650px) {
+  .projet {
+    display: block;
+    width: 100%;
+  }
+
+  .imageProjet {
+    width: 100%;
+  }
+
+  .imageProjet img {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .texteProjet {
+    width: 100%;
+  }
+
+  .projetReverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 550px) {
+  header {
+    padding: 10px 10px 10px 0;
+  }
+
+  header nav a {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+  .intro p {
+    font-size: 18px;
+    max-width: 350px;
+    padding: 15px;
+  }
+
+  .citation div p {
+    font-size: 18px;
+    max-width: 350px;
+    padding: 15px;
+  }
+
+  .roles {
+    width: 100%;
+    display: block;
+  }
+
+  .roles div {
+    width: 100%;
+    padding: 15 px;
+  }
+
+  .roles div p {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .presentation {
+    display: block;
+  }
+
+  .presentationDemarche {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .presentationAction {
+    width: 100%;
+    padding: 20px;
+  }
+  footer {
+    padding: 10px;
+  }
+  footer div p {
+    font-size: 8px;
+  }
+
+  .mailto {
+    font-size: 14px;
+  }
+  .liste {
+    display: none;
+  }
+
+  .liste nav a {
+    display: inline;
+  }
+
+  .introCoop div{
+    padding: 15px;
+  }
+
+.modal-content {
+  width: 90%;
+  padding: 30px 30px 20px 30px;
+}
+
+  .projet h3 {
+    font-size: 18px;
+  }
+  .imageProjet img {
+    max-width: 280px;
+  }
+  .texteProjet {
+    display: block;
+  }
+
+  .texte1Projet {
+    width: 100%;
+  }
+
+  .texte2Projet {
+    width: 100%;
+  }
+
+  .reference p {
+    font-size: 16px;
+    margin: 15px;
+  }
+
+.reference p:hover{
+  transform : none;
+}
+
+  .reference span {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .contact {
+    max-width: 260px;
+
+    font-size: 14px;
+    margin-top: 15px;
+
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width:340px){
+
+    .intro p {
+    font-size: 16px;
+  }
+
+  .texteBienvenue {
+    padding: 10px 10px 15px 15px;
+  }
+
+   .citation div p {
+    font-size: 16px;
+    max-width: 350px;
+    padding: 15px;
+  }
+
+
+}

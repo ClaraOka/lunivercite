@@ -3,7 +3,7 @@
 //3 we want that when we clock the close button, we hide the modal
 //4.our link dosent follow the href
 
-$('.perso a').on ('click', function(){
+$('.photos a').on ('click', function(){
 
 //var currentImage = $(this).html()
 //we grab the modal and set it to the current Image we just clicked on

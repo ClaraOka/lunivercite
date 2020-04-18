@@ -95,7 +95,7 @@ header nav {
 header nav a {
   text-decoration: none;
   font-size: 18px;
-  color: rgb(114, 250, 241);
+  color: rgb(150, 214, 245);
   margin-left: 25px;
 }
 
@@ -144,7 +144,7 @@ header nav a:hover {
 .texteBienvenue {
   width: 50%;
   background-color: #fff;
-  color: rgb(114, 250, 241);
+  color: rgb(150, 214, 245);
   font-size: 16px;
   padding: 10px 15px 20px 15px;
   font-weight: 700;
@@ -225,14 +225,14 @@ header nav a:hover {
 
 .presentationDemarche {
   width: 50%;
-  background-color: rgb(114, 250, 241);
+  background-color: rgb(150, 214, 245);
   color: #fff;
   padding: 20px;
 }
 
 .presentationAction {
   width: 50%;
-  color: rgb(114, 250, 241);
+  color: rgb(150, 214, 245);
   padding: 20px 40px 20px 20px;
 }
 
@@ -273,7 +273,7 @@ footer div a {
 
 
 .introCoop{
-  background-color: rgb(114, 250, 241);
+  background-color: rgb(150, 214, 245);
   margin-bottom: 20px;
 }
 
@@ -346,7 +346,7 @@ footer div a {
   position: fixed;
   right: 0px;
   top: 0px;
-  color: rgb(114, 250, 241);
+  color: rgb(150, 214, 245);
   font-weight: 900;
   padding: 20px;
   cursor: pointer;
@@ -360,7 +360,7 @@ position: absolute;
   max-width: 900px;
   width: 90%;
   transform: translateX(-50%);
-  background-color: rgba(114, 250, 241, 0.9);
+  background-color: rgba(150, 214, 245, 0.9);
   padding: 50px 50px 40px 50px;
 }
 
@@ -384,7 +384,7 @@ position: absolute;
 
 .introProjet p{
   text-align: center;
-  color: rgb(114, 250, 241);
+  color: rgb(150, 214, 245);
   font-size: 18px;
   font-weight: 700;
 }
@@ -466,8 +466,8 @@ span {
 }
 .contact a {
   text-decoration: none;
-  color: rgb(114, 250, 241);
-  border-bottom: 2px solid rgb(114, 250, 241);
+  color: rgb(150, 214, 245);
+  border-bottom: 2px solid rgb(150, 214, 245);
 }
 
 .contact a:hover {
@@ -479,7 +479,7 @@ span {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
-  color: rgb(114, 250, 241);
+  color: rgb(150, 214, 245);
   font-size: 20px;
   margin-top: 30px;
   text-align: center;
